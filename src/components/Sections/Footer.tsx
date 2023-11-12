@@ -20,13 +20,12 @@ const Footer: FC = memo(() => (
       <a
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
         href="https://reactresume.com">
-        
         <span>
           Provided by <span className="text-white">Alex Mitev</span>
           <span className="italic text-yellow"></span>
         </span>
       </a>
-      <span className="text-sm text-neutral-700">© Copyright 2023 Alex Mitevr</span>
+      <span className="text-sm text-neutral-700">© Copyright 2023 Alex Mitev</span>
     </div>
   </div>
 ));

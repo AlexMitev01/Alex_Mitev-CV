@@ -45,7 +45,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Alex Mitev Resume',
-  description: "This is the resume of Alex Mitev",
+  description: 'This is the resume of Alex Mitev',
 };
 
 /**
@@ -74,17 +74,16 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a  <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Takin Solutiions </strong> helping build a modern,semantic data platform and
-         database software for ontology. I have been developing the platform, both at the backend with the data base, and in the fronted building website, and website features.
-
+        I'm a <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working at{' '}
+        <strong className="text-stone-100">Takin Solutiions </strong> helping build a modern,semantic data platform and
+        database software for ontology. I have been developing the platform, both at the backend with the data base, and
+        in the fronted building website, and website features.
       </p>
-    
     </>
   ),
   actions: [
     {
-      href: '/Alex-Mitev.pdf',  // Updated path
+      href: '/Alex-Mitev.pdf', // Updated path
       download: 'Alex-Mitev-Resume.pdf',
       text: 'Resume',
       primary: false,
@@ -94,7 +93,7 @@ export const heroData: Hero = {
       href: '/Alex-Reference Letter.pdf',
       download: 'Alex-Reference Letter.pdf',
       text: 'Cover Letter',
-      primary: false, 
+      primary: false,
     },
     {
       href: `#${SectionId.Contact}`,
@@ -159,11 +158,11 @@ export const skills: SkillGroup[] = [
       {
         name: 'React.js',
         level: 7,
-      }
+      },
     ],
   },
-  
-  { 
+
+  {
     name: 'System Administrator',
     skills: [
       {
@@ -174,15 +173,13 @@ export const skills: SkillGroup[] = [
       {
         name: 'Linux Administration',
         level: 8,
-      
       },
 
       {
-        name: 'MacOS', 
+        name: 'MacOS',
         level: 8,
       },
-    ]
-
+    ],
   },
 
   {
@@ -237,9 +234,8 @@ export const skills: SkillGroup[] = [
         name: 'Citrix',
         level: 7,
       },
-      
-    ]
-  }
+    ],
+  },
 ];
 
 /**
@@ -325,37 +321,55 @@ export const education: TimelineItem[] = [
     date: '2019-2023',
     location: 'New Bulgarian University',
     title: 'Bachelor Degree - National and Coorporate Security',
-    content: <p>During my academic journey I have acuqired a solid foundation in the filed of Cybersecurity and Corporate Security at New Bulgarian University. 
-      This program not only provided a comprehensive understanding of cybersecurity principles but also equipped me 
-      with practical skills crucial for the industry. Throughout my studies, I delved into areas such as
-       information security, gaining expertise to tackle diverse security challenges. 
-       This educational experience 
-      has prepared me to navigate the evolving field of cybersecurity with a solid foundation and a practical skill set.</p>,
+    content: (
+      <p>
+        During my academic journey I have acuqired a solid foundation in the filed of Cybersecurity and Corporate
+        Security at New Bulgarian University. This program not only provided a comprehensive understanding of
+        cybersecurity principles but also equipped me with practical skills crucial for the industry. Throughout my
+        studies, I delved into areas such as information security, gaining expertise to tackle diverse security
+        challenges. This educational experience has prepared me to navigate the evolving field of cybersecurity with a
+        solid foundation and a practical skill set.
+      </p>
+    ),
   },
   {
     date: '2021-2023',
     location: 'New Bulgarian University',
     title: 'Bachelor Degree - Digital Humanities, Artigicial Intelegence',
-    content: <p>My academic pursuit centered around Digital Humanities with a major focus on Artificial Intelligence at New Bulgarian University. 
-      This dynamic program not only provided me with a deep understanding of Digital Humanities but also allowed me to specialize in cutting-edge AI technologies. 
-      Throughout my studies, I engaged with Machine Learing, Data Mining, AI in Healthcare and AI in Business. Furthremore I have gained valuable insights and hands-on experience in leveraging AI for various applications. 
-      This educational journey has equipped me to blend the realms of humanities and technology, fostering a unique skill set for innovative problem-solving and interdisciplinary collaboration.</p>,
+    content: (
+      <p>
+        My academic pursuit centered around Digital Humanities with a major focus on Artificial Intelligence at New
+        Bulgarian University. This dynamic program not only provided me with a deep understanding of Digital Humanities
+        but also allowed me to specialize in cutting-edge AI technologies. Throughout my studies, I engaged with Machine
+        Learing, Data Mining, AI in Healthcare and AI in Business. Furthremore I have gained valuable insights and
+        hands-on experience in leveraging AI for various applications. This educational journey has equipped me to blend
+        the realms of humanities and technology, fostering a unique skill set for innovative problem-solving and
+        interdisciplinary collaboration.
+      </p>
+    ),
   },
   {
-
-  date: '2014-2019',
-  location: 'PGIIRE “Mihai Eminescu”',
-  title: 'High shcool Diploma -Extensive Learing of the Romanian language and culture',
-  content: <p>This high school experience has not only equipped me with a solid academic foundation but has also instilled values of teamwork, leadership, and community involvement, for example:
-<br></br>
-<br></br>* Diverse Curriculum: Engaging in a comprehensive curriculum covering subjects such as mathematics, literature, science, and languages.
-<br></br>* Extracurricular Involvement: Actively participating in extracurricular activities, clubs, and events to broaden my horizons and develop interpersonal skills.
-<br></br>* Leadership Opportunities: Taking on leadership roles in school projects or clubs, honing leadership qualities and collaborative abilities.
-<br></br>* Community Engagement: Contributing to community service projects, fostering a sense of social responsibility and empathy.
-<br></br>* Language Proficiency: Gaining proficiency in English, Romanian and Russian, enhancing communication skills and cultural understanding.
-</p>,
-},
-
+    date: '2014-2019',
+    location: 'PGIIRE “Mihai Eminescu”',
+    title: 'High shcool Diploma -Extensive Learing of the Romanian language and culture',
+    content: (
+      <p>
+        This high school experience has not only equipped me with a solid academic foundation but has also instilled
+        values of teamwork, leadership, and community involvement, for example:
+        <br></br>
+        <br></br>* Diverse Curriculum: Engaging in a comprehensive curriculum covering subjects such as mathematics,
+        literature, science, and languages.
+        <br></br>* Extracurricular Involvement: Actively participating in extracurricular activities, clubs, and events
+        to broaden my horizons and develop interpersonal skills.
+        <br></br>* Leadership Opportunities: Taking on leadership roles in school projects or clubs, honing leadership
+        qualities and collaborative abilities.
+        <br></br>* Community Engagement: Contributing to community service projects, fostering a sense of social
+        responsibility and empathy.
+        <br></br>* Language Proficiency: Gaining proficiency in English, Romanian and Russian, enhancing communication
+        skills and cultural understanding.
+      </p>
+    ),
+  },
 ];
 
 export const experience: TimelineItem[] = [
@@ -367,10 +381,18 @@ export const experience: TimelineItem[] = [
       <p>
         PROJECTS I HAVE WORKED ON:
         <br></br>
-        <a href='https://zellij.pythonanywhere.com/' style={{ textDecoration: 'underline', color: 'blue' }}>Zellij</a> - I have been constantly implementing new feautures for the platform and delivering new website look, for the future frontend desing.
-        Managing databases, creating backups for the website and upgrading the infrastructure.
+        <a href="https://zellij.pythonanywhere.com/" style={{textDecoration: 'underline', color: 'blue'}}>
+          Zellij
+        </a>{' '}
+        - I have been constantly implementing new feautures for the platform and delivering new website look, for the
+        future frontend desing. Managing databases, creating backups for the website and upgrading the infrastructure.
         <br></br>
-        <a href='https://github.com/takinsolutions' style={{ textDecoration: 'underline', color: 'blue' }}>Takin Solutions Github</a> - Having the role of a Technical Writer I have been documenting every single, article or repository in Github.Before actually pushing that document in Production environment, the document is being double check multiple times for authenticity.
+        <a href="https://github.com/takinsolutions" style={{textDecoration: 'underline', color: 'blue'}}>
+          Takin Solutions Github
+        </a>{' '}
+        - Having the role of a Technical Writer I have been documenting every single, article or repository in
+        Github.Before actually pushing that document in Production environment, the document is being double check
+        multiple times for authenticity.
       </p>
     ),
   },
@@ -381,22 +403,35 @@ export const experience: TimelineItem[] = [
     content: (
       <>
         <p>
-          As a Full Stack Developer, I excel in crafting robust and scalable solutions across the entire technology stack. Proficient in languages such as JavaScript, HTML, CSS, React.js, Typescript, and Python, I bring a wealth of expertise in database management, leveraging technologies like PostgreSQL, MySQL, and ensuring seamless integration with AWS infrastructure. My proficiency extends to Linux environments, and my commitment to collaborative development is evident through my active engagement on GitHub. Additionally, I play a pivotal role in technical writing within the company, ensuring clear communication and documentation of complex technical concepts.
+          As a Full Stack Developer, I excel in crafting robust and scalable solutions across the entire technology
+          stack. Proficient in languages such as JavaScript, HTML, CSS, React.js, Typescript, and Python, I bring a
+          wealth of expertise in database management, leveraging technologies like PostgreSQL, MySQL, and ensuring
+          seamless integration with AWS infrastructure. My proficiency extends to Linux environments, and my commitment
+          to collaborative development is evident through my active engagement on GitHub. Additionally, I play a pivotal
+          role in technical writing within the company, ensuring clear communication and documentation of complex
+          technical concepts.
           <br></br>
           <br></br>
-          *Web Design and UI/UX: Proficient in creating visually appealing and user-friendly interfaces, ensuring a positive and intuitive user experience.
+          *Web Design and UI/UX: Proficient in creating visually appealing and user-friendly interfaces, ensuring a
+          positive and intuitive user experience.
           <br></br>
-          *Programming Languages: Mastery of JavaScript, HTML, CSS, and Python for versatile and dynamic web application development.
+          *Programming Languages: Mastery of JavaScript, HTML, CSS, and Python for versatile and dynamic web application
+          development.
           <br></br>
-          *Database Management: Extensive experience in database design and management, utilizing PostgreSQL and MySQL to ensure optimal data organization and retrieval.
+          *Database Management: Extensive experience in database design and management, utilizing PostgreSQL and MySQL
+          to ensure optimal data organization and retrieval.
           <br></br>
-          *Cloud Infrastructure: Adept at leveraging AWS services for scalable and efficient cloud-based solutions, contributing to seamless deployment and maintenance.
+          *Cloud Infrastructure: Adept at leveraging AWS services for scalable and efficient cloud-based solutions,
+          contributing to seamless deployment and maintenance.
           <br></br>
-          *Linux Environments: Proficient in working with Linux systems, ensuring smooth application deployment and effective system administration.
+          *Linux Environments: Proficient in working with Linux systems, ensuring smooth application deployment and
+          effective system administration.
           <br></br>
-          *Version Control: Active collaboration on GitHub, showcasing a commitment to best practices in version control and collaborative development workflows.
+          *Version Control: Active collaboration on GitHub, showcasing a commitment to best practices in version control
+          and collaborative development workflows.
           <br></br>
-          *Technical Writing: Key contributor to technical documentation within the company, ensuring clear and comprehensive communication of complex technical concepts for various stakeholders.
+          *Technical Writing: Key contributor to technical documentation within the company, ensuring clear and
+          comprehensive communication of complex technical concepts for various stakeholders.
           <br></br>
         </p>
       </>
@@ -405,44 +440,47 @@ export const experience: TimelineItem[] = [
 
   {
     date: 'November 2022 - September 2023',
-    location: 'Accenture', 
-    title: 'Application Engineer/Application Cloud Support Analyst', 
+    location: 'Accenture',
+    title: 'Application Engineer/Application Cloud Support Analyst',
     content: (
       <p>
-        As a Application Cloud Support Analyst my main responsibilities revolve around developing and implementing the user-facing components of a website or application. Furthermore, I have been performing testing and debugging, conducting thorough testing of the front-end code to identify and fix bugs, inconsistencies, or usability issues. This includes using debugging tools and writing unit tests to ensure code quality.
-<br></br>
-<br></br>*Strong experience with this frameworks: React.js,Javascript, Jinja2, Flask ,
-<br></br>*Proficient in Python-Data Manipulation and Analysis
-<br></br>*Web Development Frameworks, Scripting and Automation
-<br></br>*Understanding of component-based architecture and reusable UI elements
-<br></br>*Experience with UI component libraries like Material-UI, Bootstrap, CSS
-<br></br>*Knowledge of CSS media queries and layout techniques
-<br></br>*Experience with CSS frameworks like Bootstrap or Foundation
-<br></br>*Citrix Management, Citrix Configuration, and Cluster Management
+        As a Application Cloud Support Analyst my main responsibilities revolve around developing and implementing the
+        user-facing components of a website or application. Furthermore, I have been performing testing and debugging,
+        conducting thorough testing of the front-end code to identify and fix bugs, inconsistencies, or usability
+        issues. This includes using debugging tools and writing unit tests to ensure code quality.
+        <br></br>
+        <br></br>*Strong experience with this frameworks: React.js,Javascript, Jinja2, Flask ,<br></br>*Proficient in
+        Python-Data Manipulation and Analysis
+        <br></br>*Web Development Frameworks, Scripting and Automation
+        <br></br>*Understanding of component-based architecture and reusable UI elements
+        <br></br>*Experience with UI component libraries like Material-UI, Bootstrap, CSS
+        <br></br>*Knowledge of CSS media queries and layout techniques
+        <br></br>*Experience with CSS frameworks like Bootstrap or Foundation
+        <br></br>*Citrix Management, Citrix Configuration, and Cluster Management
       </p>
-    )
+    ),
   },
-  
-  
-  
+
   {
     date: 'September 2022 - November 2022',
     location: 'HCL Technology',
     title: 'Senior Software Technician',
     content: (
       <p>
-        As a Senior Software Technician, I have bene working on the tickets routed by L1 support. monitoring ticket flow, working with database, providing additional support to the colleagues, and being responsible for escalating more advanced technical problems.
-<br></br>
-<br></br>*Strong knowledge of cross-browser compatibility issues and solutions
-<br></br>*Working experience with AWS and other Public Cloud Platform
-<br></br>*Monitoring workflow
-<br></br>*Quality Assurance
-<br></br>*Basic Scripting with BASH, Perl
-<br></br>*Quality Assurance
-<br></br>*Basic Scripting with BASH, Perl
-<br></br>*Logging parsing and analysis
-<br></br>*Web services – Advanced
-<br></br>*Network protocols – Intermediate
+        As a Senior Software Technician, I have bene working on the tickets routed by L1 support. monitoring ticket
+        flow, working with database, providing additional support to the colleagues, and being responsible for
+        escalating more advanced technical problems.
+        <br></br>
+        <br></br>*Strong knowledge of cross-browser compatibility issues and solutions
+        <br></br>*Working experience with AWS and other Public Cloud Platform
+        <br></br>*Monitoring workflow
+        <br></br>*Quality Assurance
+        <br></br>*Basic Scripting with BASH, Perl
+        <br></br>*Quality Assurance
+        <br></br>*Basic Scripting with BASH, Perl
+        <br></br>*Logging parsing and analysis
+        <br></br>*Web services – Advanced
+        <br></br>*Network protocols – Intermediate
       </p>
     ),
   },
@@ -452,14 +490,18 @@ export const experience: TimelineItem[] = [
     title: 'Software Technician',
     content: (
       <p>
-       As a As a Software Technician I was providing effective technical assistance for clients/employees and back up and support to the IT managers. My main responsibilities were installing, upgrading, and troubleshooting hardware and software systems. Address user tickets regarding hardware, software, and networking:
-<br></br>
-<br></br>*Database administration, MySql, Postgres setup
-<br></br>*Creating users, security groups, computer accounts, and GPO policies in AD • Creating users, security groups in Azure AD • Creating email accounts in O365 • Troubleshoot O365 related issues.
-<br></br>*Resolve technical problems with Local Area Networks (LAN), Wide Area Networks (WAN), and other systems.
-<br></br>*Manage file servers and printer servers
-<br></br>*Manage hardware and software assets
-<br></br>*Handling Outlook and Mailbox related issues
+        As a As a Software Technician I was providing effective technical assistance for clients/employees and back up
+        and support to the IT managers. My main responsibilities were installing, upgrading, and troubleshooting
+        hardware and software systems. Address user tickets regarding hardware, software, and networking:
+        <br></br>
+        <br></br>*Database administration, MySql, Postgres setup
+        <br></br>*Creating users, security groups, computer accounts, and GPO policies in AD • Creating users, security
+        groups in Azure AD • Creating email accounts in O365 • Troubleshoot O365 related issues.
+        <br></br>*Resolve technical problems with Local Area Networks (LAN), Wide Area Networks (WAN), and other
+        systems.
+        <br></br>*Manage file servers and printer servers
+        <br></br>*Manage hardware and software assets
+        <br></br>*Handling Outlook and Mailbox related issues
       </p>
     ),
   },
@@ -473,10 +515,8 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'George Bruseker',
-      text: "I had the pleasure of working with Alex Mitev during his two-month tenure at Takin.solutions. Hired as a developer, Alex showcased proficiency in dev-ops, technical writing, and code development. His autonomous investigation and successful implementation of deployment instructions for Arches and Zellij in AWS Linux and PythonAnywhere environments demonstrated his ability to learn quickly. Alex's dedication extended to creating comprehensive documentation and establishing a solid development workflow on GitHub for our in-house software, Zellij. His conscientious and motivated approach, coupled with eagerness to learn, makes Alex an asset to any team. I believe he will thrive in a collaborative environment with fellow developers to further build on his knowledge and skills."
+      text: "I had the pleasure of working with Alex Mitev during his two-month tenure at Takin.solutions. Hired as a developer, Alex showcased proficiency in dev-ops, technical writing, and code development. His autonomous investigation and successful implementation of deployment instructions for Arches and Zellij in AWS Linux and PythonAnywhere environments demonstrated his ability to learn quickly. Alex's dedication extended to creating comprehensive documentation and establishing a solid development workflow on GitHub for our in-house software, Zellij. His conscientious and motivated approach, coupled with eagerness to learn, makes Alex an asset to any team. I believe he will thrive in a collaborative environment with fellow developers to further build on his knowledge and skills.",
     },
-    
-    
   ],
 };
 
@@ -486,9 +526,9 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch with me, Alex Mitev !',
-  description: 'You can reach out to me directly on my emial or you can give me a call. You can find the contact information below:',
+  description:
+    'You can reach out to me directly on my emial or you can give me a call. You can find the contact information below:',
   items: [
-  
     {
       type: ContactType.Email,
       text: 'mitevalex21@gmail.com',
@@ -508,13 +548,12 @@ export const contact: ContactSection = {
       type: ContactType.Github,
       text: 'TakinSolutions',
       href: 'https://github.com/takinsolutions',
-      
     },
     {
       type: ContactType.Phone,
-      text:'+359 8937 28205',
-      href:'+359 8937 28205',
-    }
+      text: '+359 8937 28205',
+      href: '+359 8937 28205',
+    },
   ],
 };
 
@@ -525,5 +564,4 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/takinsolutions'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/AlexMitev01'},
-
 ];
