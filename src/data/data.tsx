@@ -537,7 +537,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Location,
       text: 'Sofia, Bulgaria',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      href: 'https://www.google.com/maps/place/Sofia/@42.6954322,23.3239467,12z/data=!3m1!4b1!4m6!3m5!1s0x40aa8682cb317bf5:0x400a01269bf5e60!8m2!3d42.6977082!4d23.3218675!16zL20vMGZ0ang?entry=ttu',
     },
     {
       type: ContactType.Github,
@@ -552,7 +552,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Phone,
       text: '+359 8937 28205',
-      href: '+359 8937 28205',
+      href: 'tel:+359893728205',
     },
   ],
 };
