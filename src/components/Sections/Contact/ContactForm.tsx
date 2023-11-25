@@ -1,5 +1,5 @@
-import { FC, memo, useCallback, useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
+import {FC, memo, useCallback, useEffect, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -22,19 +22,19 @@ const ContactForm: FC = memo(() => {
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
-      const { name, value } = event.target;
-      setData((prevData) => ({ ...prevData, [name]: value }));
+      const {name, value} = event.target;
+      setData(prevData => ({...prevData, [name]: value}));
     },
-    []
+    [],
   );
 
   const handleSendMessage = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault();
 
     try {
-      const serviceID = "service_xucebtn";
-      const templateID = "template_1nh9n5a";
-      
+      const serviceID = 'service_xucebtn';
+      const templateID = 'template_1nh9n5a';
+
       const emailData: Record<string, unknown> = {
         name: data.name,
         email: data.email,
@@ -88,8 +88,7 @@ const ContactForm: FC = memo(() => {
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
-        type="submit"
-      >
+        type="submit">
         Send Message
       </button>
     </form>
